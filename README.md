@@ -25,6 +25,12 @@ Buka PowerShell (as Administrator jika belum pernah pakai Scoop), lalu jalankan:
 iwr -useb https://raw.githubusercontent.com/nyanpoketto-kujira/lazyphp-setup/master/scripts/install.ps1 | iex
 ```
 
+### 🍎 macOS
+Buat pengguna MacBook/iMac, script ini bakal otomatis nge-setup semuanya lewat **Homebrew** (karena lu berhak dapet pengalaman semulus Windows & Linux):
+```bash
+curl -sL https://raw.githubusercontent.com/nyanpoketto-kujira/lazyphp-setup/master/scripts/install-mac.sh | bash
+```
+
 ### 🐧 Linux (Arch / Manjaro / EndeavourOS)
 Buat distro *Rolling Release*, jalankan:
 ```bash
