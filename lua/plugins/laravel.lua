@@ -9,7 +9,7 @@ return {
     },
     cmd = { "Laravel" },
     cond = function()
-      return vim.loop.fs_stat("artisan") ~= nil
+      return vim.fn.findfile("artisan", ".;") ~= ""
     end,
     keys = {
       { "<leader>la", "<cmd>Laravel artisan<cr>", desc = "Laravel Artisan" },
