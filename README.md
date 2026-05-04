@@ -15,28 +15,30 @@ Selamat datang di **LazyPHP**! 🐘 Ini adalah iterasi terbaru dari konfigurasi 
 - 🪟 **Bening (Neovide):** Setup *acrylic/blur* estetik yang transparan menembus desktop, cocok buat *streaming*!
 - 🔪 **Blade & Frontend Ready:** Dukungan *native* untuk Laravel Blade, TailwindCSS, dan Emmet.
 
-## 🛠️ Cara Install
+## 🛠️ Cara Install (Otomatis)
 
-### 1. Prerequisites (Wajib ada)
-- **Neovim 0.10+**
-- **Git**
-- **Nerd Font** (Rekomendasi: `FiraCode Nerd Font`)
-- **Node.js, PHP, & Composer** (Wajib untuk LSP Intelephense & Phpactor)
+Gua udah nyediain *Installer Script* buat lu yang nggak mau ribet install dependensi satu-satu. Script ini bakal otomatis nginstall Neovim, Neovide, Node.js, PHP, Ripgrep, dll.
 
-### 2. Clone Repository
-
-**Windows (PowerShell):**
+### 🪟 Windows (PowerShell)
+Buka PowerShell (as Administrator jika belum pernah pakai Scoop), lalu jalankan:
 ```powershell
-git clone https://github.com/nyanpoketto-kujira/nvim-config.git $env:LOCALAPPDATA\nvim
+iwr -useb https://raw.githubusercontent.com/nyanpoketto-kujira/lazyphp-setup/master/scripts/install.ps1 | iex
 ```
 
-**Linux/macOS:**
+### 🐧 Linux (Arch / Manjaro / EndeavourOS)
+Buat distro *Rolling Release*, jalankan:
 ```bash
-git clone https://github.com/nyanpoketto-kujira/nvim-config.git ~/.config/nvim
+curl -sL https://raw.githubusercontent.com/nyanpoketto-kujira/lazyphp-setup/master/scripts/install-rolling.sh | bash
+```
+
+### 🐧 Linux (Ubuntu / Debian / Mint)
+Buat distro *Stable*, script ini bakal otomatis nge-download Neovim & Neovide versi terbaru (langsung dari rilis resmi, karena paket `apt` terlalu jadul):
+```bash
+curl -sL https://raw.githubusercontent.com/nyanpoketto-kujira/lazyphp-setup/master/scripts/install-stable.sh | bash
 ```
 
 ### 3. Jalankan Neovim
-Buka Terminal dan ketik `nvim` atau buka aplikasi `neovide`. Neovim akan otomatis menginstal ratusan plugin di balik layar.
+Buka Terminal baru dan ketik `nvim` atau buka aplikasi `neovide`. Neovim akan otomatis menginstal ratusan plugin di balik layar.
 
 ---
 
