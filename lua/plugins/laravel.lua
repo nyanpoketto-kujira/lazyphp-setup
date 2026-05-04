@@ -8,6 +8,9 @@ return {
       "kevinhwang91/promise-async",
     },
     cmd = { "Laravel" },
+    cond = function()
+      return vim.loop.fs_stat("artisan") ~= nil
+    end,
     keys = {
       { "<leader>la", "<cmd>Laravel artisan<cr>", desc = "Laravel Artisan" },
       { "<leader>lr", "<cmd>Laravel routes<cr>", desc = "Laravel Routes" },
