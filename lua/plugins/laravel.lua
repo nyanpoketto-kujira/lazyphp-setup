@@ -12,9 +12,9 @@ return {
       return vim.loop.fs_stat("artisan") ~= nil
     end,
     keys = {
-      { "<leader>la", "<cmd>Laravel artisan<cr>", desc = "Laravel Artisan" },
-      { "<leader>lr", "<cmd>Laravel routes<cr>", desc = "Laravel Routes" },
-      { "<leader>lm", "<cmd>Laravel make<cr>", desc = "Laravel Make" },
+      { "<leader>aa", "<cmd>Laravel artisan<cr>", desc = "Laravel Artisan" },
+      { "<leader>ar", "<cmd>Laravel routes<cr>", desc = "Laravel Routes" },
+      { "<leader>am", "<cmd>Laravel make<cr>", desc = "Laravel Make" },
     },
     opts = {},
     init = function()
