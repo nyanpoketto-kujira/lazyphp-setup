@@ -1,26 +1,27 @@
-# 🐋 Nvim/Neovide Kujira Setup (VTuber Edition)
+# 🐘 LazyPHP (Kujira Setup)
 
 [![Neovim](https://img.shields.io/badge/Neovim-0.10+-green.svg?style=for-the-badge&logo=neovim)](https://neovim.io)
 [![Lua](https://img.shields.io/badge/Lua-5.1-blue.svg?style=for-the-badge&logo=lua)](https://lua.org)
-[![LazyVim](https://img.shields.io/badge/LazyVim-Setup-blueviolet.svg?style=for-the-badge)](https://www.lazyvim.org)
+[![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4.svg?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+[![LazyPHP](https://img.shields.io/badge/LazyPHP-Setup-blueviolet.svg?style=for-the-badge)](#)
 
-Selamat datang di **Kujira Setup**! 🐋 Ini adalah konfigurasi Neovim/Neovide pribadi milik **nyanpoketto-kujira** (VTuber) yang udah dioptimasi buat performa tinggi, visual estetik (bening), dan *workflow* sat-set.
+Selamat datang di **LazyPHP**! 🐘 Ini adalah iterasi terbaru dari konfigurasi Neovim/Neovide milik **nyanpoketto-kujira** yang di-fork dari LazyVim, sekarang difokuskan 100% menjadi mesin tempur mematikan untuk *Fullstack Web Development* (terutama ekosistem Laravel/PHP).
 
 ## ✨ Fitur Unggulan
-- 💾 **Auto-Save ala PHPStorm:** Save otomatis pas pindah window atau balik ke normal mode.
-- ⚡ **Ultra-Fast Suggestion:** `blink.cmp` udah di-tweak tanpa delay (0ms response).
-- 🌐 **Cross-Platform:** Deteksi OS otomatis buat settingan font & clipboard.
-- 🪟 **Bening (Neovide):** Setup Neovide acrylic/blur yang bening dan estetik, cocok buat *streaming* atau ngoding santai.
-- 🐘 **Laravel Ready:** Support Blade, Tailwind, dan Intelephense yang udah di-tweak performanya.
+- 🐘 **Dewa Refactor & Diagnostics:** Kombinasi maut **Intelephense** (untuk *strict diagnostics* & *syntax check*) dan **Phpactor** (untuk refactoring kelas enterprise).
+- 💾 **Auto-Save ala PHPStorm:** Save otomatis saat pindah window atau keluar dari *Insert Mode*.
+- ⚡ **Ultra-Fast Suggestion:** `blink.cmp` dituning khusus untuk *zero-delay response*.
+- 🌐 **Cross-Platform:** Deteksi OS otomatis buat *clipboard* dan resolusi font.
+- 🪟 **Bening (Neovide):** Setup *acrylic/blur* estetik yang transparan menembus desktop, cocok buat *streaming*!
+- 🔪 **Blade & Frontend Ready:** Dukungan *native* untuk Laravel Blade, TailwindCSS, dan Emmet.
 
-## 🛠️ Cara Install (PC Baru)
+## 🛠️ Cara Install
 
 ### 1. Prerequisites (Wajib ada)
 - **Neovim 0.10+**
 - **Git**
 - **Nerd Font** (Rekomendasi: `FiraCode Nerd Font`)
-- **Ripgrep & FD** (Buat nyari file cepet)
-- **Node.js & PHP** (Buat LSP)
+- **Node.js, PHP, & Composer** (Wajib untuk LSP Intelephense & Phpactor)
 
 ### 2. Clone Repository
 
@@ -35,14 +36,14 @@ git clone https://github.com/nyanpoketto-kujira/nvim-config.git ~/.config/nvim
 ```
 
 ### 3. Jalankan Neovim
-Tinggal ketik `nvim` atau buka `neovide`. Neovim bakal otomatis install semua plugin via Lazy.nvim.
+Buka Terminal dan ketik `nvim` atau buka aplikasi `neovide`. Neovim akan otomatis menginstal ratusan plugin di balik layar.
 
 ---
 
 ## ⚠️ Catatan Penting
-- **Windows Defender:** Selalu exclude folder `nvim` dan `nvim-data` biar nggak ada delay scanning.
-- **Mason:** Begitu buka pertama kali, ketik `:Mason` buat pastiin LSP (intelephense, tailwind, dsb) terinstall sempurna.
-- **Transparency:** Kalau di Linux nggak transparan, pastikan compositor lu aktif.
+- **Windows Defender:** Selalu `exclude` folder `nvim` dan `nvim-data` di setting *Anti-Virus* biar performa LSP nggak kecekek!
+- **Mason:** Begitu buka pertama kali, ketik `:Mason` buat memastikan server LSP (intelephense, tailwind, html) selesai terinstal.
+- **Transparansi:** Jika pakai Linux/macOS, pastikan *window compositor* lu mendukung *blur*.
 
 ---
-Dibuat dengan 🔥 oleh **nyanpoketto-kujira**
+*Dibuat dengan 🔥 oleh **nyanpoketto-kujira***

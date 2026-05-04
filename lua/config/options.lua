@@ -1,3 +1,6 @@
+-- Set Intelephense sbg utama biar diagnostics jalan
+vim.g.lazyvim_php_lsp = "intelephense"
+
 -- OS Detection
 local is_windows = vim.loop.os_uname().version:find("Windows")
 
